@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+    var colors = ['red', 'black', 'green'];
+    colors[1] //returns black
+
+    console.log(colors.length);
+    //adds to end of array
+
+    console.push('purple')
+    //adds to beginning of array
+
+
+    var nums = [100, 200, 300, 400, 500, 600];
+    nums.slice(2, 5); //returns [300, 400, 500]
+
+    nums.slice(nums.length/2, nums.length) //returns second half of array
+
+    nums.splice(2, 1, 1500);
+    */
+
+    /*
+    var age = parseInt(prompt('Enter age'));
+    var votable = (age >= 18) ? 'YOU CAN VOTE'
+    : 'nah';
+    console.log(votable);
+    */
+
+        /*
+    var age = parseInt(prompt('Enter age'));
+    if(age >= 18){
+        console.log('You are an adult');
+    }
+    else if(age >= 13 && age <= 17){
+        console.log('You are a teenager');
+    }    
+    else if(age >= 10 && age <= 12){
+        console.log('You are a preteen');    
+    }
+    else{
+        console.log('You are a baby');
+    }
+    */
+    /*
+    var x = parseInt(prompt('Enter number'));
+    var y = parseInt(prompt('Enter number'));
+    var z = parseInt(prompt('Enter number'));
+    //I would sort the numbers from least to greatest in order to determine value
+    //Step 1: Ask if x is smaller than y and if x is smaller than z
+
+    //Step 2: Ask if y is smaller than x and if y is smaller than z
+    
+    //Step 3:  Ask if z is smaller than x and if z is smaller than y
+    if(x < y && x < z){
+        console.log(x + 'is the smallest');
+    }
+    else if(y < z){
+        console.log(y + 'is the smallest');
+    }
+    else{
+        console.log(z + 'is the smallest');
+    }
+    */
+
+    /*
+    switch(new Date().getMonth()){
+        case 0:
+            console.log('Jan');
+            break;
+        case 8:
+            console.log('Sept');
+            break;
+        case 10:
+            console.log('Nov');
+            break;
+        case 11:
+            console.log('Dec');
+            break;    
+    }
+    */
+
+    /*
+    var name= prompt();
+    switch(name.charAt(0).toLowerCase()){
+        case 't':
+            console.log('Youre Terrific');
+            break;
+        case 'j':
+            console.log('Youre Jreat');
+            break;
+        default:
+            console.log('new phone, who dis');
+            break;        
+    }
+    */
+    /*
+    switch(new Date().getDay()){
+        case 0:
+            console.log('Sunday');
+            break;
+        case 1:
+            console.log('Monday');
+            break;
+        case 2:
+            console.log('Tuesday');
+            break;
+        case 3:
+            console.log('Wednesday');
+            break;   
+        case 4:
+            console.log('Thursday');
+            break;
+        case 5:
+            console.log('Friday');
+            break;
+        case 6:
+            console.log('Saturday');
+            break; 
+    }
+    */
+
+    var now  = new Date();        // current date/time
+    var hrs  = now.getHours();    // 0 to 23
+    var mins = now.getMinutes();
+    var secs = now.getSeconds();
+	
+	
+	var weekday = new Array(7);
+weekday[0]=  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+var day = weekday[now.getDay()];
+
+
+    document.writeln("<p>It is " + now + "</p>");
+    document.writeln("<p>Hour is " + hrs + "</p>");
+    document.writeln("<p>Minute is " + mins + "</p>");
+    document.writeln("<p>Second is " + secs + "</p>");
+	document.writeln("<p>Today is " + day + "</p>");
+    if (hrs < 12) {
+      document.writeln("<h2>Good Morning!</h2>");
+    } else {
+      document.writeln("<h2>Good Afternoon!</h2>");
+    }
+	if (day = "Sunday") {
+      document.writeln("<h2>Sunday</h2>");
+    } 
+	else if (day = "Monday"){
+      document.writeln("<h2>Monday</h2>");
+    }
+	 else {
+      document.writeln("<h2>n</h2>");
+    }
+    </script>
+</body>
+</html>
